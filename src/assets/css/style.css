@@ -6,6 +6,7 @@
   --header-background-color: #C3CFD9;
   --background-color: #E5E5E5;
   --black: #000;
+  --white: #FFF;
   --normal-font-color: #293845;
   --success-font-color: #247A6B;
   --form-font-color: #AFAFAF;
@@ -15,6 +16,7 @@
   --selected-seat-border: #1AAE9E;
   --available-seat-border: #7B8B99;
   --unavailable-seat-border: #F7C52B;
+  --legend-color: #4E5A65;
   --header-height: 67px;
   --footer-height: 117px;
 }
@@ -24,7 +26,7 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  background-color: var(--background-color);
+  background-color: var(--white);
   color: var(--normal-font-color);
   font-family: 'Roboto', sans-serif;
 }

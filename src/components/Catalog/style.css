@@ -19,17 +19,14 @@
     margin: 30px 0;
 }
 
-.Catalog .movies {
+.Catalog .posters {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.Catalog .movie {
+.Catalog img {
     width: 129px;
     height: 193px;
-    text-align: center;
-    vertical-align: middle;
-    background-color: black;
     margin-bottom: 27px;
 }

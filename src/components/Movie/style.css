@@ -17,3 +17,7 @@
     letter-spacing: 0.04em;
     margin: 30px 0;
 }
+
+.Movie.loading {
+    margin-top: 40vh;
+}
