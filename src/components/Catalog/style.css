@@ -23,6 +23,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    border: 8px #FFFFFF;
 }
 
 .Catalog img {

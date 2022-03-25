@@ -20,29 +20,32 @@ export default function Movie() {
     promise.catch((err) => console.log(err.response));
   }, []);
 */
-  return sessions.length>0 ? (
+  return sessions.id>0 ? (
     <main className="Movie">
       <h1>Selecione o horário</h1>
       <div className="sessions">
         {sessions.days.map((day) => {
           const { weekday, date, showtimes } = day;
           return (
-            <div key={date}>
+            <div key={date} className="date">
               <span>
-                `${weekday} - ${date}`
+                {weekday} - {date}
               </span>
-              {showtimes.map((session) => {
-                const { name, id: sessionId } = session;
-                return (
-                  <Link
-                    to={`/sessao/${sessionId}`}
-                    className="session"
-                    key={sessionId}
-                  >
-                    <button>{name}</button>
-                  </Link>
-                );
-              })}
+              <div>
+                {showtimes.map((session) => {
+                    const { name, id: sessionId } = session;
+                    return (
+                        <button></button>
+                    <Link
+                        to={`/sessao/${sessionId}`}
+                        key={sessionId}
+                    >
+                        <button>{name}</button>
+                    </Link>
+                    </button>
+                    );
+                })}
+              </div>
             </div>
           );
         })}
