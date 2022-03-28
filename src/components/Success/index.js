@@ -1,10 +1,13 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import axios from "axios";
+// import axios from "axios";
 
 import "./style.css";
 
 export default function Success() {
+  const {userName, cpf} = useParams();
+  console.log(userName+cpf)
+  
   return (
     <main className="Success">
       <h1>Pedido feito com sucesso!</h1>
@@ -24,9 +27,7 @@ export default function Success() {
         <br></br>
         <span>CPF: 123.456.789-10</span>
       </div>
-      <button>
-        <Link to="/">Voltar pra Home</Link>
-      </button>
+      <Link to="/" className="Link">Voltar pra Home</Link>
     </main>
   );
 }
